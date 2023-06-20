@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@400;500;700&family=Outfit:wght@300;400;500&family=Overpass:ital,wght@0,600;1,300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.btn{
+    background-color: #5852FE;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+}
+/* ================== HERO SECTION =================== */
+.hero-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.hero-section nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-section nav img{
+    width: 130px;
+    height: 130px;
+}
+.hero-section nav .nav-tab{
+    display: flex;
+    gap: 8rem;
+    list-style: none;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+}
+.started a{
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+.hero-body{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10rem;
+}
+.hero-body-text{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 18rem;
+
+}
+.hero-body-text h1{
+    font-weight: 800;
+    font-size: 38px;
+    width: 70%;
+}
+.hero-body-text p{
+    font-size: 22px;
+}
+.hero-body img{
+    width: 40%;
+    transform: translateX(22%);
+}
+
+/* ============= ABOUT SECTION ================ */
+.about{
+    background-color: #5852FE;
+    display: flex;
+    padding: 60px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.about h1{
+    font-size: 30px;
+    color: white;
+}
+.about p{
+    width: 30%;
+    text-align: justify;
+    color: white;
+}
+/* ================ HOW IT WORKS ========================*/
+.works{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.works h1{
+    padding: 15px 40px;
+    border: 2px solid black;
+}
+.work-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    gap: 40px;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.image{
+    width: 450px;
+    height: 450px;
+}
+.content p{
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+}
+.p2{
+    margin-left: 15px;
+}
+.learn-more{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    padding: 4rem 12rem;
+}
+.learn{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: #5852FE;
+    box-shadow: 0 4px 4px 4px rgb(0, 0, 0, 0.12);
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 3rem;
+}
+.learn2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 4px 4px rgb(0, 0, 0, 0.12);
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 3rem;
+}
+
+.learn p, .learn2 p{
+    width: 57%;
+    text-align: center;
+}
+.learn button{
+    background-color: white;
+    padding: 15px 55px;
+    color: #5852FE;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 4rem;
+    font-size: larger;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.learn button img{
+    position: relative;
+}
+.learn2 button{
+    background-color:#5852FE;
+    padding: 15px 55px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 4rem;
+    font-size: larger;
+    font-weight: 600;   
+    display: flex;
+    align-items: center;
+}
+.learn2 button img{
+    color: white;
+    position: relative;
+}
+/* ================== AVAILABLE COURSES =====================*/
+.available-courses{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.accordions{
+    display: flex;
+    gap: 55px;
+    margin-top: 4rem;
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.accordion .accrd-cont{
+    background-color: #5852FE;
+    display: flex;
+    padding: 15px 20px;
+    gap: 10rem;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.accordion .accrd-cont h1{
+    width: 50%;
+}
+.accordion .accrd-cont img{
+    width: 50px;
+    height: 50px;
+}
+/* ==================== HOW TO PARTICIPATE ======================== */
+.participation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 3rem;
+}
+.participation .head{
+    padding: 15px 30px;
+    border: 2px solid black;
+}
+.participate{
+    margin-left: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.part-cont{
+    display: flex;
+
+}
+.part-cont div{
+    width: 100%;
+}
+
+.part-cont h3{
+    width: 40%;
+    color: grey;
+}
+/* =================== FEATURES AND BENEFITS ============================ */
+.features{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.features .head{
+    padding: 15px 30px;
+    border: 2px solid black;
+}
+.wrapper{
+    display: flex;
+    gap: 50px;
+    padding: 60px 40px;
+
+}
+.wrap1{
+    width: 50%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 31px;
+}
+.wrap1 img{
+    width: 100%;
+}
+.wrap-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.wrap-cont p{
+    width: 60%;
+    font-weight: 800;
+    color: gray;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.background{
+    background-color: rgb(223, 214, 214); 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    border-top-right-radius: 31px;
+    border-top-left-radius: 31px;
+}
+/* ================ TAKE A QUIZ =================== */
+.quiz{
+    padding: 20px 40px;
+
+}
+.quiz-sect{
+    background-color: #5852FE;
+    width: 100%;
+    padding: 20px 7rem;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.quiz-btn{
+    margin-top: 2rem;
+}
+.quiz-btn button{
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #0502278F;
+    font-size: x-large;
+    color: white;
+}
+.quiz-content{
+    width: 100%;
+}
+.quiz-content h1{
+    font-size: 60px;
+    color: white;
+}
+.quiz-content p{
+    font-size: 30px;
+    width: 65%;
+    font-weight: 500;
+    color: rgb(212, 202, 202);
+}
+.quiz-sect img{
+    width: 30%;
+}
+.images{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ==================== FOOTER ======================== */
+
+footer{
+    background-color:#5852FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.join-but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.join-but input{
+    padding: 15px;
+    width: 35%;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+}
+.join-but button{
+    padding: 15px;
+    outline: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    border-left: 1px solid black;
+    font-size: large;
+    font-weight: 500;
+}
+/* ================= FOOTER =========================== */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.foot-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 18rem;
+}
+.ft-cont1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.ft-cont1 a{
+    color: rgb(187, 183, 183);
+}
+footer h4{
+    font-size: xx-large;
+    color: white;
+}
+
+
+
