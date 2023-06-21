@@ -8,15 +8,55 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 40px;
 }
 .spinwin{
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.spin-display{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.spin-display .spin{
+    width: 50%;
+    height: 50vh;
+    background-color: grey;
+    margin-bottom: 30px;
 }
 .spinwin p{
     width: 60%;
     text-align: center;
     font-size: larger;
+}
+.buttons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn1{
+    width: 60%;
+    padding: 15px 20px;
+    color: black;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: large;
+
+}
+.btn2{
+    width: 30%;
+    padding: 15px 20px;
+    background-color: #5852FE;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: large;
+
 }

@@ -1,0 +1,48 @@
+.setting{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.usersDetail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+    margin-bottom: 6rem;
+}
+.usersDetail .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: grey;
+}
+.user{
+    width: 100%;
+}
+.user label{
+    font-weight: 600;
+}
+.box input{
+    width: 70%;
+    padding: 15px 0;
+    border-radius: 16px;
+    border: 1px solid black;
+    background-color: grey;
+}
+.but{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.btn1, .btn2{
+    padding: 15px 25px;
+    background-color: #5852FE;
+    border-radius: 17px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}

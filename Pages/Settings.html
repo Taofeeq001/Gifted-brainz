@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="./Dashboard.css">
-    <link rel="stylesheet" href="./Spin.css">
+    <link rel="stylesheet" href="./Settings.css">
 </head>
 <body>
     <main>
@@ -66,29 +66,33 @@
 
             </div>
         </aside>
-        <div class="spin-content">
-            <div class="spinwin">
-                <h1>Spin and Win</h1>
-                <p>you can only spn once. check out our others reward page for more opportunities.</p>
+        <div class="setting">
+            <div class="setting-cont">
+                <h1>Settings</h1>
+                <p>Manage all your settings in Here</p>
             </div>
-            <div class="spin-display">
-                <div class="spin"></div>
-                <div class="buttons">
-                    <button class="btn1">More Information</button>
-                    <button class="btn2">Spin Now</button>
+            <div class="usersDetail">
+                <div class="circle"></div>
+                <div class="user">
+                    <label for="">Username</label>
+                    <div class="box">
+                        <input type="text" name="" id="">
+                        <a href="">Edit</a>
+                    </div>
                 </div>
+                <div class="user">
+                    <label for="">Your Email</label>
+                    <div class="box">
+                        <input type="email" name="" id="">
+                        <a href="">Edit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="but">
+                <button class="btn1">Save</button>
+                <button class="btn2">Log Out</button>
             </div>
         </div>
     </main>
 </body>
-<script>
-    const image = document.querySelector('.logo')
-    document.querySelector('.bot').addEventListener("click", ()=>{
-        document.querySelector('aside').classList.toggle('aside-after')
-        document.querySelector('.logo').classList.toggle('all-none')
-        document.querySelectorAll('.none').forEach((all)=>{
-            all.classList.toggle('all-none')
-        })
-    })
-</script>
 </html>
