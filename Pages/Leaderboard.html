@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="./Dashboard.css">
+    <link rel="stylesheet" href="./Leaderboard.css">
+</head>
+<body>
+    <aside>
+        <div class="aside-top">
+            <img class="logo" src="../Images/Gifted-Brainz-PNG (1).png" alt="">
+            <button><img class="bot" src="../Images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
+        </div>
+        <div class="aside-top2">
+            <div class="board">
+                <img src="../Images/Dashboard (1).png" alt="">
+                <h5 class="none">Dashboard</h5>
+            </div>
+            <div class="board2">
+                <div class="other">
+                    <img src="../Images/Running (1).png" alt="">
+                    <h5 class="none">Quiz Competition</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Group 33.png" alt="">
+                    <h5 class="none">Quiz Leaderboard</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/RGB Color Wheel (1).png" alt="">
+                    <h5 class="none">Spin to Win</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Graduation Cap (1).png" alt="">
+                    <h5 class="none">Courses</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Bank Cards (1).png" alt="">
+                    <h5 class="none">Payment</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Collaboration Female Male (1).png" alt="">
+                    <h5 class="none">Referal History</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Order History (1).png" alt="">
+                    <h5 class="none">Earning History</h5>
+                </div>
+            </div>
+            <div class="board3">
+                <div class="other">
+                    <img src="../Images/Group 34.png" alt="">
+                    <h5 class="none">Settings</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Group 35.png" alt="">
+                    <h5 class="none">Get Help</h5>
+                </div>
+                <div class="other">
+                    <img src="../Images/Group 36.png" alt="">
+                    <h5 class="none">Community</h5>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+    <div class="leaderboard">
+        <div class="leader-top">
+            <h1>Leader Board</h1>
+            <p>View the Leaderboard History</p>
+        </div>
+        <div class="leaders-table">
+            <div class="serial">
+                <h4>S/N</h4>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+                <p>11</p>
+                <p>12</p>
+               
+            </div>
+            <div class="name">
+                <h4>NAME</h4>
+                <p>Samuel David</p>
+                <p>Adebayo Adeniyi</p>
+                <p>Chioma Chibuzor</p>
+                <p>Bello Dammy</p>
+                <p>Amari Chima</p>
+                <p>Diallo Aadan</p>
+                <p>Amari Chima</p>
+                <p>Diallo Aadan</p>
+                <p>Amari Chima</p>
+                <p>Diallo Aadan</p>
+                <p>Amari Chima</p>
+                <p>Diallo Aadan</p>
+        
+            </div>
+            <div class="answ">
+                <h4>TOTAL ANSWERED</h4>
+            
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+                <p>340</p>
+            </div>
+            <div class="reward">
+                <h4>REWARD</h4>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+                <p>#235</p>
+    
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const image = document.querySelector('.logo')
+    document.querySelector('.bot').addEventListener("click", ()=>{
+        document.querySelector('aside').classList.toggle('aside-after')
+        document.querySelector('.logo').classList.toggle('all-none')
+        document.querySelectorAll('.none').forEach((all)=>{
+            all.classList.toggle('all-none')
+        })
+    })
+</script>
+</html>

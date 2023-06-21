@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    width: 100%;
+}
+.payment-content{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.buttons{
+    display: flex;
+    gap: 50px;
+    /* width: 70%; */
+}
+.buttons .btn1{
+    padding: 20px 35px;
+    background-color: #5852FE;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+.buttons .btn2{
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-weight: 600;
+}

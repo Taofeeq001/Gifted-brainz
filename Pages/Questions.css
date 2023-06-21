@@ -1,0 +1,46 @@
+main{
+    display: flex;
+    width: 100%;
+
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.instruction{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.question-area{
+    background-color: grey;
+    width: 70%;
+    height: 40vh;
+    border-radius: 20px;
+}
+.options{
+    width: 70%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+.optA{
+    background-color: grey;
+    padding: 20px 0;
+    width: 100%;
+    height: 10vh;
+    border-radius: 20px;
+}
+.question button{
+    width: 70%;
+    padding: 20px 0;
+    background-color: #5852FE;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
