@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Inter:wght@400;500;700&family=Outfit:wght@300;400;500&family=Overpass:ital,wght@0,600;1,300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin',sans-serif ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10rem;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.plans{
+    display: flex;
+    gap: 3rem;
+}
+.weekly{
+    border: 2px solid black;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 15px;
+    width: 50%;
+}
+.weekly div, .monthly div{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.monthly div p{
+    width: 80%;
+}
+.monthly{
+    border: 2px solid black;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 15px;
+    width: 50%;
+    background-color: #5852FE;
+    color: white;
+}
+main button{
+    padding: 15px 4rem;
+    background-color: #5852FE;
+    border: none;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-bottom: .7rem;
+}
+footer{
+    background-color: #5852FE;
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+footer img{
+    width: 35px;
+    height: 20px;
+}
+.footer-links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.footer-links a{
+    text-decoration: none;
+    color: black;
+}
+.link1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-right: 2px solid black;
+    margin-right: 40px;
+    width: 20%;
+}
+.link2{
+    border-right: 2px solid black;
+    margin-right: 40px;
+    width: 20%;
+}
+@media screen and (max-width: 950px) {
+    main{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .top p{
+        text-align: center;
+        width: 80%;
+    }
+    .plans{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .monthly, .weekly{
+        width: 70%;
+    }
+    footer{
+        padding: 30px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-links{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .footer-links img{
+        display: none;
+    }
+    .link1, .link2, .link3{
+        border-right: none;
+        width: 100%;
+    }
+    .footer-links a{
+        font-size: 10px;
+        align-items: center;
+    }
+}
