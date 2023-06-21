@@ -1,0 +1,89 @@
+body{
+    overflow: hidden;
+}
+main{
+    height: 100vh;
+}
+.course-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding: 30px 40px;
+}
+.course-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.explore p{
+    width: 70%;
+}
+.tech-mech{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.scroll{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.tech-top{
+    display: flex;
+    justify-content: space-between;
+}
+.tech-top a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.all-courses{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+}
+.course-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.crytpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.crytpo img{
+    width: 350px;
+    height: 300px;
+}
+.button{
+    display: flex;
+    gap: 40px;
+}
+.button .btn1{
+    padding: 8px 14px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.button .btn2{
+    padding: 8px 14px;
+    background-color:#5852FE;
+    border-radius: 15px;
+    border: none;
+
+
+}
