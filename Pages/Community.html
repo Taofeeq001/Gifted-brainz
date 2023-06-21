@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
+    <title>Community</title>
     <link rel="stylesheet" href="./Dashboard.css">
-    <link rel="stylesheet" href="./Settings.css">
+    <link rel="stylesheet" href="./Community.css">
 </head>
 <body>
     <main>
@@ -15,95 +15,71 @@
                 <button><img class="bot" src="../Images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
             </div>
             <div class="aside-top2">
-                <div class="board">
+                <a href="" class="board">
                     <img src="../Images/Dashboard (1).png" alt="">
                     <h5 class="none">Dashboard</h5>
-                </div>
+                </a>
                 <div class="board2">
-                    <div class="other">
+                    <a href="" class="other">
                         <img src="../Images/Running (1).png" alt="">
                         <h5 class="none">Quiz Competition</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    
+                    <a href="" class="other">
                         <img src="../Images/Group 33.png" alt="">
                         <h5 class="none">Quiz Leaderboard</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/RGB Color Wheel (1).png" alt="">
                         <h5 class="none">Spin to Win</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/Graduation Cap (1).png" alt="">
                         <h5 class="none">Courses</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/Bank Cards (1).png" alt="">
                         <h5 class="none">Payment</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/Collaboration Female Male (1).png" alt="">
                         <h5 class="none">Referal History</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/Order History (1).png" alt="">
                         <h5 class="none">Earning History</h5>
-                    </div>
+                    </a>
                 </div>
                 <div class="board3">
-                    <div class="other">
+                    <a href="" class="other">
                         <img src="../Images/Group 34.png" alt="">
                         <h5 class="none">Settings</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/Group 35.png" alt="">
                         <h5 class="none">Get Help</h5>
-                    </div>
-                    <div class="other">
+                    </a>
+                    <a href="" class="other">
                         <img src="../Images/Group 36.png" alt="">
                         <h5 class="none">Community</h5>
-                    </div>
+                    </a>
                 </div>
-
             </div>
         </aside>
-        <div class="setting">
-            <div class="setting-cont">
-                <h1>Settings</h1>
-                <p>Manage all your settings in Here</p>
-            </div>
-            <div class="usersDetail">
-                <div class="circle"></div>
-                <div class="user">
-                    <label for="">Username</label>
-                    <div class="box">
-                        <input type="text" name="" id="">
-                        <a href="">Edit</a>
-                    </div>
+        <div class="community">
+            <div class="community-content">
+                <div class="head">
+                    <h1>Join Our Community</h1>
+                    <p>Join our Social Media and Comminuty for More Update.</p>
                 </div>
-                <div class="user">
-                    <label for="">Your Email</label>
-                    <div class="box">
-                        <input type="email" name="" id="">
-                        <a href="">Edit</a>
-                    </div>
+                <div class="grid">
+                    <a href=""><button>Telegram</button></a>
+                    <a href=""><button>Twitter</button></a>
+                    <a href=""><button>Facebook</button></a>
+                    <a href=""><button>Discord</button></a>
                 </div>
-            </div>
-            <div class="but">
-                <button class="btn1">Save</button>
-                <button class="btn2">Log Out</button>
             </div>
         </div>
     </main>
 </body>
-
-<script>
-    const image = document.querySelector('.logo')
-    document.querySelector('.bot').addEventListener("click", ()=>{
-        document.querySelector('aside').classList.toggle('aside-after')
-        document.querySelector('.logo').classList.toggle('all-none')
-        document.querySelectorAll('.none').forEach((all)=>{
-            all.classList.toggle('all-none')
-        })
-    })
-</script>
 </html>

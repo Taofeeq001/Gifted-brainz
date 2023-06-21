@@ -1,0 +1,39 @@
+.community{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.community-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.community p{
+    width: 60%;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.grid button{
+    padding: 15px 25px;
+    background-color: #5852FE;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 100%;
+
+}

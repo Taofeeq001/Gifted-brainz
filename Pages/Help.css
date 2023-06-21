@@ -1,0 +1,46 @@
+.help{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.usersDetail{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+    margin-bottom: 6rem;
+}
+.user{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.user textarea{
+    width: 70%;
+    border-radius: 20px;
+    background-color: grey;
+}
+.user label{
+    font-weight: 600;
+}
+.box input{
+    width: 70%;
+    padding: 25px 0;
+    border-radius: 16px;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.btn1{
+    padding: 15px 25px;
+    background-color: #5852FE;
+    border-radius: 17px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
