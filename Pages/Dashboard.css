@@ -4,6 +4,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppin',sans-serif ;
+    text-decoration: none;
+}
+.board2 a{
+    color: black;
+}
+.other:hover{
+    background-color: #5852FE;
 }
 main{
     display: flex;
@@ -12,7 +19,6 @@ main{
 aside{
     width: 15%;
     border-right: 1px solid black;
-    /* background-color: #5852FE; */
 }
 .aside-after{
     width: 4.7%;
@@ -32,11 +38,7 @@ aside{
 .aside-top2{
     display: flex;
     flex-direction: column;
-    gap: 6.8rem;
-    overflow-y: scroll;
-}
-::-webkit-scrollbar{
-    display: none;
+    gap: 3.7rem;
 }
 aside .logo{
     width: 100px;
@@ -52,7 +54,8 @@ aside .logo{
     align-items: center;
     gap: 40px;
 }
-.board img, .other img{
+
+.board img, .other img, .other2 img{
     width: 35px;
     height: 35px;
 }
@@ -60,7 +63,16 @@ aside .logo{
     display: flex;
     gap: 30px;
     align-items: center;
-    padding: 0 25px;
+    padding: 5px 25px;     
+}
+.other2{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 5px 25px;     
+}
+.other2:hover{
+    background-color: rgb(175, 174, 174);
 }
 .board2{
     display: flex;
@@ -76,6 +88,9 @@ aside .logo{
 }
 .board3 h5{
     color: white;
+}
+.board3 h5:hover{
+    color: #5852FE;
 }
 .dash-body{
     width: 100%;
@@ -189,5 +204,45 @@ aside .logo{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    
+}
+
+@media screen and (max-width: 950px) {
+    aside{
+        width:  19%;
+        height: 100vh;
+    }
+    .aside-top2{
+        gap: 1.6rem;
+    }
+    .dash-body{
+        overflow-y: scroll;
+        width: 100%;
+        height: 100vh;
+    }
+    .main-top{
+        width: 100%;
+        flex-direction: column;
+    }
+    .points{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .earnings, .referal-earnings, .earnings-point{
+        width: 90%;
+    }
+    .table-container{
+        width: 100%;
+        overflow-x: scroll;
+        background-color: #34A853;
+    }
+    .table h4{
+        font-size: small;
+    }
+    .table p{
+        font-weight: 200;
+        font-size: small;
+    }
+    .sn{
+        width: 50%;
+    }
 }
