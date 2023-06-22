@@ -22,8 +22,13 @@ main img{
 form{
     display: flex;
     flex-direction: column;
-    gap: 25px;
-
+    gap: 10px;
+}
+/* ================ ERRORS ====================== */
+.userErr, .emailErr, .passErr{
+    color: red;
+    font-size: small;
+    display: none;
 }
 .sign{
     display: flex;
@@ -31,6 +36,13 @@ form{
 }
 .sign-up{
     display: flex;
+}
+.sign-up button{
+    cursor: pointer;
+}
+.sign-up button a{
+    text-decoration: none;
+    color: white;
 }
 .sign input{
     padding: 10px 0;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gifted-Brainz Sign Up</title>
-    <!-- <link rel="shortcut icon" href="../Images/Gifted-Brainz-PNG (1).png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="../Images/Gifted-Brainz-PNG (1).png" type="image/x-icon">
     <link rel="stylesheet" href="./SignUp.css">
 </head>
 <body>
@@ -16,24 +16,28 @@
         <div class="form-detail">
             <form action="">
                 <div class="sign">
-                    <label for="">Username</label>
-                    <input type="text">
+                    <label class="userHead" for="">Username</label>
+                    <input class="userInput" type="text">
                 </div>
+                <p class="userErr">please input your username</p>
                 <div class="sign">
-                    <label for="">Enter your Email </label>
-                    <input type="email">
+                    <label class="mailHead" for="">Enter your Email </label>
+                    <input class="mailInput" type="email">
                 </div>
+                <p class="emailErr">please input your Email address</p>
+
                 <div class="sign">
-                    <label for="">Password</label>
-                    <input type="text">
+                    <label class="passHead" for="">Password</label>
+                    <input class="passInput" type="text">
                 </div>
+                <p class="passErr">please input your password</p>
                 <div class="terms">
                     <input type="checkbox">
                     <p>I have agree to the <span><a href="">Terms & Conditions</a></span> and the <span><a href="">Privacy & Policy</a></span> of this website.</p>
                 </div>
                 <div class="sign-up">
                     <div>
-                        <a href=""><button>Sign Up</button></a>
+                        <button><a href="./SignIn.html">Sign Up</a></button>
                     </div>
                     <p>OR</p>
                     <a href=""><img src="../Images/Group 22.png" alt=""></a>
@@ -62,4 +66,55 @@
         </footer>
     </main>
 </body>
+<script>
+    const form = document.querySelector("form"),
+    user = document.querySelector(".userInput"),
+    mail = document.querySelector(".mailInput"),
+    password = document.querySelector(".passInput"),
+    userError = document.querySelector(".userErr"),
+    emailError = document.querySelector(".emailErr"),
+    passError = document.querySelector(".passErr"),
+    userHead = document.querySelector(".userHead"),
+    mailHead = document.querySelector(".mailHead"),
+    passHead = document.querySelector(".passHead")
+
+    form.addEventListener("submit", (e)=>{
+        e.preventDefault()
+        if(user.value===""){
+            userError.style.display="block"
+            userHead.style.color="red"
+            user.style.border="1px solid red"
+        }
+        else{
+            userError.style.display="none"
+            userHead.style.color="green"
+            user.style.border="1px solid green"
+
+
+        }
+        if(mail.value===""){
+            emailError.style.display="block"
+            mailHead.style.color="red"
+            mail.style.border="1px solid red"
+
+        }
+        else{
+            emailError.style.display="none"
+            mailHead.style.color="green"
+            mail.style.border="1px solid green"
+        }
+        if(password.value===""){
+            passError.style.display="block"
+            passHead.style.color="red"
+            password.style.border="1px solid red"
+
+        }
+        else{
+            passError.style.display="none"
+            passHead.style.color="green"
+            password.style.border="1px solid green"
+
+        }
+    })
+</script>
 </html>

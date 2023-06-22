@@ -3,8 +3,10 @@ document.querySelector('.hamburger').addEventListener("click", ()=>{
 });
 
 
-
-// const click = document.querySelector('.bot');
-// click.addEventListener("click", ()=>{
-//     document.querySelector('aside').classList.toggle('aside-after')
-// })
+const accrdContent = document.querySelectorAll('.accrd-cont').forEach((accordion)=>{
+    accordion.addEventListener('click',()=>{
+        const panel = accordion.nextElementSibling;
+        panel.style.display=panel.style.display === 'block'? 'none':'block';
+    })
+    
+})
