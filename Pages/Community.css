@@ -37,3 +37,30 @@
     width: 100%;
 
 }
+
+@media screen and (max-width:950px) {
+    .community{
+        margin-top: 2rem;
+    }
+    .community-content{
+        width: 100%;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+    .head p{
+        text-align: left;
+        width: 70%;
+
+    }
+    .head1{
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .head h1{
+        font-size: large;
+    }
+}

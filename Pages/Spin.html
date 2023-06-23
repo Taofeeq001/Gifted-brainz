@@ -66,11 +66,68 @@
                 </div>
             </div>
         </aside>
+        <aside class="mobile-aside">
+            <div class="aside-top">
+                <img class="logo" src="../Images/Gifted-Brainz-PNG (1).png" alt="">
+            </div>
+            <div class="aside-top2">
+                <a href="./Dashboard.html" class="board active" >
+                    <img src="../Images/Dashboard (1).png" alt="">
+                    <h5 class="none">Dashboard</h5>
+                </a>
+                <div class="board2">
+                    <a href="./Quiz.html" class="other">
+                        <img src="../Images/Running (1).png" alt="">
+                        <h5 class="none">Quiz Competition</h5>
+                    </a>
+                    
+                    <a href="./Leaderboard.html" class="other">
+                        <img src="../Images/Group 33.png" alt="">
+                        <h5 class="none">Quiz Leaderboard</h5>
+                    </a>
+                    <a href="./Spin.html" class="other">
+                        <img src="../Images/RGB Color Wheel (1).png" alt="">
+                        <h5 class="none">Spin to Win</h5>
+                    </a>
+                    <a href="./Coursepage.html" class="other">
+                        <img src="../Images/Graduation Cap (1).png" alt="">
+                        <h5 class="none">Courses</h5>
+                    </a>
+                    <a href="./Payment.html" class="other">
+                        <img src="../Images/Bank Cards (1).png" alt="">
+                        <h5 class="none">Payment</h5>
+                    </a>
+                    <a href="./Referal.html" class="other">
+                        <img src="../Images/Collaboration Female Male (1).png" alt="">
+                        <h5 class="none">Referal History</h5>
+                    </a>
+                    <a href="" class="other">
+                        <img src="../Images/Order History (1).png" alt="">
+                        <h5 class="none">Earning History</h5>
+                    </a>
+                </div>
+                <div class="board3">
+                    <a href="./Settings.html" class="other2">
+                        <img src="../Images/Group 34.png" alt="">
+                        <h5 class="none">Settings</h5>
+                    </a>
+                    <a href="./Help.html" class="other2">
+                        <img src="../Images/Group 35.png" alt="">
+                        <h5 class="none">Get Help</h5>
+                    </a>
+                    <a href="./Community.html" class="other2">
+                        <img src="../Images/Group 36.png" alt="">
+                        <h5 class="none">Community</h5>
+                    </a>
+                </div>
+            </div>
+        </aside>
         <div class="spin-content">
             <div class="spinwin">
                 <h1>Spin and Win</h1>
-                <p>you can only spn once. check out our others reward page for more opportunities.</p>
+                <img class="mobile-arrow" src="../Images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg" alt="">
             </div>
+            <p>you can only spn once. check out our others reward page for more opportunities.</p>
             <div class="spin-display">
                 <div class="spin"></div>
                 <div class="buttons">
@@ -89,6 +146,10 @@
         document.querySelectorAll('.none').forEach((all)=>{
             all.classList.toggle('all-none')
         })
+    })
+    const toggle = document.querySelector('.mobile-arrow');
+    toggle.addEventListener("click", ()=>{
+        document.querySelector('.mobile-aside').classList.toggle('open')
     })
 </script>
 </html>

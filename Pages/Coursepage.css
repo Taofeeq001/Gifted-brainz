@@ -84,6 +84,28 @@ main{
     background-color:#5852FE;
     border-radius: 15px;
     border: none;
+}
 
-
+@media screen and (max-width: 950px) {
+    .tech-mech, .all-courses{
+        flex-direction: column;
+    }
+    .explore{
+        width: 100%;
+    }
+    .course-top{
+        width: 100%;
+        flex-direction: column;
+    }
+    .exp{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .exp h2{
+        font-size: large;
+    }
+    .cat{
+        display: flex;
+    }
 }

@@ -44,3 +44,25 @@
     font-weight: 600;
     font-size: large;
 }
+
+@media screen and (max-width:950px) {
+    .help{
+        width: 100%;
+    }
+    .help-cont{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .usersDetail{
+        gap: 10px;
+        margin-top: 3rem;
+    }
+    .usersDetail input{
+        width: 100%;
+    }
+    .user .message{
+        width: 100%;
+    }
+}

@@ -20,6 +20,9 @@ aside{
     width: 15%;
     border-right: 1px solid black;
 }
+.mobile-aside{
+    display: none;
+}
 .aside-after{
     width: 4.7%;
     height: 100vh;
@@ -104,21 +107,33 @@ aside .logo{
     align-items: center;
     gap: 40px;
 }
+.dash-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.mobile-arrow{
+    display: none;
+}
 .search{
     width: 70%;
     display: flex;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    align-items: center;
+    padding: 0 20px;
 }
 .search input{
     width: 100%;
     border-radius: 20px;
     padding: 10px;
+    border: none;
 }
 .search-img{
-    position: absolute;
-    right: 20%;
     width: 25px;
     height: 25px;
-    top: 38px;
 }
 .profile{
     display: flex;
@@ -205,14 +220,42 @@ aside .logo{
     flex-direction: column;
     gap: 50px;
 }
+.hamburger{
+    content: '/2630';
+}
 
 @media screen and (max-width: 950px) {
-    aside{
-        width:  19%;
+    main{
+        width: 100%;
+        overflow: hidden;
+    }
+    .mobile-arrow{
+        display: block;
+    }
+    .mobile-aside{
+        display: block;
+        width: 0;
+        position: absolute;
+        left: 0;
         height: 100vh;
+        overflow: hidden;
+        transition: .9s ease-in-out;
+        z-index: 999;
+        background-color: aliceblue;
+    }
+    .open{
+        width: 60%;
+        height: 100vh;
+        transition: .9s ease-in-out;
+    }
+    aside{
+        display: none;
     }
     .aside-top2{
         gap: 1.6rem;
+    }
+    .dash-top{
+        width: 100%;
     }
     .dash-body{
         overflow-y: scroll;
@@ -231,9 +274,13 @@ aside .logo{
         width: 90%;
     }
     .table-container{
-        width: 100%;
-        overflow-x: scroll;
-        background-color: #34A853;
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .answered{
+        width: 30%;
     }
     .table h4{
         font-size: small;

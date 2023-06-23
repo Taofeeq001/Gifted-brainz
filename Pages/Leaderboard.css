@@ -42,3 +42,32 @@ body{
     border-bottom: 1px solid black;
 }
 
+@media screen and (max-width: 950px) {
+    main{
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .leaderboard{
+        flex-direction: column;
+        overflow: scroll;
+        width: 140%;
+        height: 100vh;
+    }
+    .leader-top{
+        width: 110%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .leaders-table{
+        width: 150%;
+        display: flex;
+    }
+    .answ{
+        width: 35%;
+    }
+    .leaders-table h4{
+        font-size: medium;
+    }
+}
+

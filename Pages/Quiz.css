@@ -13,7 +13,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 45px;
+    gap: 20px;
 }
 .play-content{
     display: flex;
@@ -42,31 +42,38 @@ main{
 @media screen and (max-width:950px) {
     main{
         display: flex;
-        width: 100%;
         height: 100vh;
-    }
-    .play-section{
-        overflow-y: scroll;
-        width: 100vh;
     }
     .play-sectionTop{
         display: flex;
         align-items: center;
+        flex-direction: column;
     }
     .play-sectionTop h1{
         font-size: large;
+    }
+    .play-text p{
+        font-size: small;
+    }
+    .play-text{
+        display: flex;
     }
     .play-content{
         width: 100%;
         display: flex;
         gap: 50px;
-        /* justify-content: space-between */
     }
     .play-content h2{
         font-size: medium;
         width: 100%;
     }
     .buttons{
-        gap: 10px;
+        gap: 6px;
+    }
+    .play-top{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 5rem;
     }
 }

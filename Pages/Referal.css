@@ -43,3 +43,27 @@ main{
 .serial h4, .name h4, .answ h4, .reward h4{
     border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 950px) {
+    .referalboard{
+        padding: 10px 40px;
+        width: 130%;
+        overflow: scroll;
+    }
+    .referal-top{
+        margin-bottom: 20px;
+    }
+    .referal-top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .referal-table{
+        width: 130%;
+        overflow: scroll;
+    }
+    .answ{
+        width: 50%;
+    }
+}

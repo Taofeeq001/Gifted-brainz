@@ -46,3 +46,27 @@
     font-weight: 600;
     font-size: large;
 }
+@media screen and (max-width: 950px) {
+    .setting{
+        width: 100%;
+    }
+    .setting-cont{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .usersDetail{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box input{
+        width: 90%;
+    }
+    .but{
+        display: flex;
+        width: 100%;
+    }
+}
